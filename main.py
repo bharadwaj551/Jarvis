@@ -9,10 +9,10 @@ app = Flask(__name__)
 
 # Initialize speech engine and generative AI model
 engine = pyttsx3.init()
-newsapi = "cb181f3461b04bd8ac3a1f6ab478b56a"
+newsapi = "NEWS_API_KEY"
 
 # Configure Google Gemini API
-genai.configure(api_key="AIzaSyC20mjRJZxKd6FUMmrWNnpTRJsE_DrorFE")
+genai.configure(api_key="GOOGLE_API_KEY")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Function to handle speech synthesis
